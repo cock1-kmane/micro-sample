@@ -8,6 +8,7 @@ node_js:
 
 build:
    ci:
+       - npm install
        - grunt
    on_success:
        - cd micro-www && docker build -t shippabledocker/micro-www .
